@@ -1,0 +1,14 @@
+include header
+		form.form-register(action='/register/register', method='post')
+			h2.form-signin-heading 用户注册
+			p.tip(id="notice")
+			input.input-block-level(type="text", placeholder="昵称", name="nickname")
+			input.input-block-level(type="text", placeholder="邮箱", name="email")
+			input.input-block-level(type="text", placeholder="性别", name="sex")
+			input.input-block-level(type="password", placeholder="密码", name="passwd")
+			input.input-block-level(type="password", placeholder="确认密码", name="repasswd")
+			div.register-btn
+					button.btn.btn-large.btn-primary(type="submit",id="register-btn") 
+						注册 		
+				script(src="/static/js/handle.js",charset="utf-8")
+include footer

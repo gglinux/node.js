@@ -1,0 +1,27 @@
+include header
+        .span
+             div.navbar.navbar-inverse.navbar-fixed-top
+                div.navbar-inner
+                    div.container
+                        a.btn.btn-navbar(data-toggle="collapse",data-target=".nav-collapse")
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                        a.brand(href="javascript:void(0)")  欢迎 #{user}
+                        div.nav-collapse.collapse
+                            ul.nav
+                                li
+                                    a(href="javascript:void(0)")  注销
+        .span2.offset
+            ul.nav.nav-list.online_list
+                li.nav-header
+                    h5  在线用户
+            ul.nav.nav-list.online_list.friend_list
+        .span10.offset
+            ul.tab_list.nav.nav-list 
+        .span10.offset2
+            textarea(style='width:513px;height:163px', id='msg_value')
+        .span10.offset5
+             a.btn.btn-primary.btn-large#msg_post POST	
+        script(src="/static/js/main.js")
+include footer

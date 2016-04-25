@@ -1,0 +1,13 @@
+include header
+		form.form-signin(action='login/login', method='post')
+			h2.form-signin-heading 聊天室V1.0
+			input.input-block-level(type="text", placeholder="昵称/邮箱", name="username")
+			input.input-block-level(type="password", placeholder="密码", name="password")
+			div.login
+				div.register
+					button.btn.btn-large.btn-primary(type="button",id="register") 
+						注册 
+				div.register	
+					button.btn.btn-large.btn-primary(type="submit") 登陆			
+				script(src="/static/js/handle.js",charset="utf-8")
+include footer
